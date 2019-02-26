@@ -1,0 +1,23 @@
+syntax = "proto3";
+
+package game;
+
+service Game {
+    rpc GetGame (GetGameRequest) returns (GetGameResponse);
+    rpc GetGameTestInterface (GetGameRequest) returns (GetGameResponse);
+}
+
+message GetGameRequest {
+    string id = 1;
+}
+
+message GetGameResponse {
+    string id = 1;
+    string title = 2;
+    repeated string tags = 3;
+    repeated Keyword keywords = 4;
+}
+
+message Keyword {
+    string tag = 1;
+}

@@ -1,0 +1,17 @@
+{
+  "name": "research",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "dependencies": {
+    "@grpc/proto-loader": "^0.4.0",
+    "grpc": "^1.18.0",
+    "lodash": "^4.17.11",
+    "moment": "^2.24.0",
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC"
+}
